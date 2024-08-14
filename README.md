@@ -31,14 +31,14 @@ $ cd glitter_and_glamour
 
 Desenvolvido por:
 
-- [Angelica-Moreira] (https://github.com/Angelmzm)
+- [Angelica-Moreira](https://github.com/Angelmzm)
 
-- [Kellyane-Vieira] (https://github.com/Kelly019)
+- [Kellyane-Vieira](https://github.com/Kelly019)
 
-- [Laura-Costa] (https://github.com/karnsteinn)
+- [Laura-Costa](https://github.com/karnsteinn)
 
-- [Sabrina-Paes] (https://github.com/biin4)
+- [Sabrina-Paes](https://github.com/biin4)
 
-- [Thamara-Oliveira] (https://github.com/thamara0)
+- [Thamara-Oliveira](https://github.com/thamara0)
 
-- [Zahira-Silva] (https://github.com/ZahiraS2-zz)
+- [Zahira-Silva](https://github.com/ZahiraS2-zz)
