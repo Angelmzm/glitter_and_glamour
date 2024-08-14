@@ -16,7 +16,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone git@github.com:Angelmzm/glitter_and_glamour.git
 #Acesse a pasta do projeto no terminal/cmd
 $ cd glitter_and_glamour
-
+```
 
 ##### Tecnologias usadas:
 
