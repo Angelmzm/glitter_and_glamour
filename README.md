@@ -27,6 +27,10 @@ $ cd glitter_and_glamour
 
 - ainda não há nenhuma
 
+##### Design:
+
+- [Figma](https://www.figma.com/design/Yz44Q7npMEMouzS2WtKcYl/Glitter%26Glamour?node-id=0-1&t=5BcnE6GILXIGjJWF-1)
+
 ##### Créditos:
 
 Desenvolvido por:
