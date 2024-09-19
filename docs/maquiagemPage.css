@@ -1,0 +1,299 @@
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 1200;
+    height: 50px;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.logoHeader{
+    height: 50px;
+}
+
+.logoHeader img{
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #EC4A7D;
+}
+
+.nav ul{
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.nav li{
+    font-family: 'Montserrat', sans-serif;
+    color: #EC4A7D;
+    display: inline;
+    margin-right: 10px;
+}
+
+.barraPesquisa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.barraPesquisa input{
+    border: 1px solid #dcdcdc; 
+    border-radius: 10px;
+    width: 250px; 
+    height: 25px;
+    background-color: #dcdcdc;
+    
+}
+
+.bttLupa{
+    border: none; 
+    background: none;
+}
+
+.imgLupa{
+    height: 30px;
+}
+
+.imgCarrinho{
+    height: 30px;
+}
+
+.imgConta{
+    height: 30px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    border: 1px solid #dcdcdc;
+    z-index: 1;
+    top: 100%; 
+    left: 0;
+    width: 120px;
+}
+
+.submenu li {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.submenu li a {
+    color: #EC4A7D;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+.categoriasMenu {
+    position: relative;
+}
+
+.categoriasMenu:hover .submenu {
+    display: block; 
+}
+
+/*maquiagem */
+
+.maquiagemPagecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.maquiagemPageSection h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Alfa Slab One', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.maquiagemPageGride {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.maquiagemProduto {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.maquiagemProduto:hover {
+    transform: translateY(-5px);
+}
+
+
+.maquiagemProduto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.maquiagemDetalhes {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.maquiagemDetalhes p {
+    margin: 5px 0;
+    text-align: left; 
+    margin-bottom: 10px;
+}
+
+.nomeMaquiagem {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.precoMaquiagem {
+    color: #EC4A7D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.mudarPagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.bttMudarPagina {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #EC4A7D;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bttMudarPagina:hover {
+    background-color: #EC4A7D;
+    color: #fff;
+}
+
+.bttMudarPagina.ativo {
+    background-color: #EC4A7D;
+    color: white;
+    border-color: #EC4A7D;
+}
+
+/* Footer */
+
+footer {
+    background-color: #EC4A7D;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footerLogo {
+    text-align: left;
+    margin-right: 20px;
+}
+
+.footerLogo img {
+    max-width: 200px;
+}
+
+.footerLogo p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #00000099;
+}
+
+.icones {
+    margin-top: 10px;
+}
+
+.icones a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.icones img {
+    width: 24px;
+    height: 24px;
+}
+
+.footerColunas {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.footerColuna {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footerColuna h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.footerColuna ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footerColuna ul li {
+    margin-bottom: 10px;
+}
+
+.footerColuna ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footerColuna ul li a:hover {
+    text-decoration: underline;
+}
+
+.categoriaContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

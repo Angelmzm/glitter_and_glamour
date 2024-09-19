@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLitter&Glamour</title>
+    <link rel="stylesheet" href="mainPage.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="admMainPage.css">
+
 
 </head>
-
+<body>
+    
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
 <body>
 
     <!-- header -->
@@ -71,46 +80,34 @@
         </div>
     </section>
 
-    <!-- Adicionar Produto -->
-    <div class="adcProdutoAdm">
-        <button id="openModalAdcBtn" class="openModalBtn" > Adicionar Produto </button>
-    </div>
-
     <!-- Lançamentos -->
-    <div id="lancamentos" class="lancamentoContainer">
+
+    <div class="lancamentoContainer">
         <h1>Lançamento</h1>
         <div class="lacamentos">
             <div class="lancamentoProduto">
-                <a href="admProdutoPage.html">
-                    <img src="imagensProdutos/imageP1.png" alt="Produto 1">
-                </a>
+                <img src="imagensProdutos/imageP1.png" alt="Produto 1">
                 <div class="lancamentoDetalhes">
                     <p class="nomeLancamento">Blush em Bastão Rosa </p>
                     <p class="precoLancamento">R$ 99,99</p>
                 </div>
             </div>
             <div class="lancamentoProduto">
-                <a href="admProdutoPage.html">           
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 2">
-                </a>
+                <img src="imagensProdutos/imageP2.png" alt="Produto 2">
                 <div class="lancamentoDetalhes">
                     <p class="nomeLancamento">KIluminador em Bastão </p>
                     <p class="precoLancamento" >R$ 149,99</p>
                 </div>
             </div>
             <div class="lancamentoProduto">
-                <a href="admProdutoPage.html">         
-                    <img src="imagensProdutos/imageP3.png" alt="Produto 3">
-                </a>
+                <img src="imagensProdutos/imageP3.png" alt="Produto 3">
                 <div class="lancamentoDetalhes">
                     <p class="nomeLancamento" >Kit Paleta de Sombra Pocket</p>
                     <p class="precoLancamento">R$ 129,99</p>
                 </div>
             </div>
             <div class="lancamentoProduto">
-                <a href="admProdutoPage.html">
-                    <img src="imagensProdutos/imageP4.png" alt="Produto 4">
-                </a>
+                <img src="imagensProdutos/imageP4.png" alt="Produto 4">
                 <div class="lancamentoDetalhes">
                     <p class="nomeLancamento">Kit Serum Hidratante</p>
                     <p class="precoLancamento">R$ 179,99</p>
@@ -118,11 +115,12 @@
             </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
-        <a href="lancamentoPage.html" class="bttLancamento">Ver Todos</a>
+        <a href="outra_pagina.html" class="bttLancamento">Ver Todos</a>
     </div>
 
     <!-- Mais Vendidos -->
-    <div id="maisVendidos" class="maisVendidosContainer">
+
+    <div class="maisVendidosContainer">
         <h1>Mais Vendidos</h1>
         <div class="maisVendidos">
             <div class="maisVendidosProduto">
@@ -155,10 +153,11 @@
             </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
-        <a href="maisVendidosPage.html" class="bttMaisVendidos">Ver Todos</a>
+        <a href="outra_pagina.html" class="bttMaisVendidos">Ver Todos</a>
     </div>
 
     <!-- Categorias -->
+
     <div id="categorias" class="categoriaContainer">
         <div class="categoria">
         <h1>Categorias</h1>
@@ -183,6 +182,7 @@
     </div>
     </div>
 
+
     <!-- Radapé -->
     <footer>
         <div class="footerContainer">
@@ -190,10 +190,10 @@
                 <img src="imagens/logo_preto.png" alt="Logo da Empresa">
                 <p>Uma loja feita para você que ama comesticos, igual a nós!</p>
                 <p>Compre fácil, rápido e com os melhores preços.</p>
-                <!-- Ícones de redes sociais -->
+               
                 <div class="icones">
                     <a href="https://twitter.com" target="_blank" >
-                        <img src="imagens/twitter.png"Twitter">
+                        <img src="imagens/twitter.png" alt= "Twitter">
                     </a>
                     <a href="https://instagram.com" target="_blank">
                         <img src="imagens/insta.png" alt="Instagram">
@@ -235,102 +235,7 @@
         </div>
     </footer>
 
-    <!-- Modal Adicionar Produto -->
-    <div id="adicionarProdutoModal" class="modal">
-        <div class="modalContainer">
-            <div class="headerModal">
-                <h1>Adicionar Produto</h1>
-                <img src="imagens/close.png" alt="Fechar" id="closeModalBtn">
-            </div>
-           
-            <form class="adicionarForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="post">
-                <div>
-                    <label for="nomeProduto">Nome:</label>
-                    <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Ex: Base da Virginia" required>
-                </div>
-                <div>
-                    <label for="preco">Preço:</label>
-                    <input type="number" id="preco" name="preco" step="0.01" placeholder="R$ 0,00" required>
-                </div>
-                <div>
-                    <label for="descricao">Descrição:</label>
-                    <input type="text" id="descricao" name="descricao" placeholder="Descrição" required>
-                </div>
-                <div>
-                    <label for="detalhes">Detalhes:</label>
-                    <input type="text" id="detalhes" name="detalhes" placeholder="Detalhes" required>
-                </div>
-                <div>
-                    <label for="lancamento">Lançamento:</label>
-                    <select id="lancamento" name="lancamento" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="categoria">Categoria:</label>
-                    <select id="categoria" name="categoria" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="0">Maquiagem</option>
-                        <option value="1">Perfume</option>
-                        <option value="2">Cabelo</option>
-                        <option value="3">Unhas</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="novoProduto">Novo Produto:</label>
-                    <select id="novoProduto" name="novoProduto" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="imagem_capa">Imagem de Capa (URL):</label>
-                    <input type="url" id="imagem_capa" name="imagem_capa" placeholder="https://exemplo.com/imagem.jpg" required>
-                </div>
-                <div>
-                    <label for="imagem_galeria1">Imagem da Galeria 1 (URL):</label>
-                    <input type="url" id="imagem_galeria1" name="imagem_galeria1" placeholder="https://exemplo.com/imagem1.jpg">
-                </div>
-                <div>
-                    <label for="imagem_galeria2">Imagem da Galeria 2 (URL):</label>
-                    <input type="url" id="imagem_galeria2" name="imagem_galeria2" placeholder="https://exemplo.com/imagem2.jpg">
-                </div>
-                <div>
-                    <label for="imagem_galeria3">Imagem da Galeria 3 (URL):</label>
-                    <input type="url" id="imagem_galeria3" name="imagem_galeria3" placeholder="https://exemplo.com/imagem3.jpg">
-                </div>
-                <button class="bttAdc" type="submit">Adicionar</button>
-            </form>
-        </div>
-    </div>
-
-
     <script>
-    
-        // Abrir o Modal
-        var modal = document.getElementById("adicionarProdutoModal");
-        var openModalBtn = document.getElementById("openModalAdcBtn");
-        var closeModalBtn = document.getElementById("closeModalBtn");
-
-        openModalBtn.onclick = function() {
-            modal.style.display = "flex";
-        }
-
-        // Fechar o Modal
-        closeModalBtn.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // Fechar ao clicar fora do modal
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
         // header Categorias
         const categoriasLink = document.getElementById('categoriasLink');
         const submenu = document.getElementById('submenu');
@@ -344,8 +249,13 @@
                 submenu.style.display = 'block';
             }
         });
-        
+
     </script>
+
+
+</body>
+</html>
+
     
 </body>
 </html>
