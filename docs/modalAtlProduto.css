@@ -1,106 +1,42 @@
-/* Estilos do Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+.atualizarForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-
-.modalContainer {
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    max-height: 90%;
-    overflow-y: auto; /* Permite rolagem no conteúdo do modal */
+.atualizarForm input,
+.atualizarForm select {
+  padding: 8px;
+  border: 1px solid #EC4A7D;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
-
-.modalContainer::-webkit-scrollbar {
-    width: 5px;               /* width of the entire scrollbar */
+.atualizarForm label {
+  font-size: 14px;
+  color: black;
+  font-weight: 550;
+  width: 280px;
+  display: block;
+  margin-bottom: 5px;
 }
-  
-.modalContainer::-webkit-scrollbar-thumb {
-    background-color: #EC4A7D;    /* color of the scroll thumb */
-    border-radius: 20px; 
+.atualizarForm button {
+  font-size: 14px;
+  color: white;
+  background-color: #EC4A7D;
+  width: 100%;
+  max-width: 280px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-
-.headerModal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.headerModal h1 {
-    margin-bottom: 20px;
-}
-
-.headerModal img {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-
-.atualizarForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.atualizarForm input{
-padding: 8px;
-border: 1px solid #EC4A7D;
-border-radius: 4px;
-width: 100%;
-max-width: 280px;
-margin-bottom: 20px;
-box-sizing: border-box;
-}
-
-.atualizarForm select{
-    padding: 8px;
-    border: 1px solid #EC4A7D;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 280px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.atualizarForm label{
-font-size: 14px;
-color: black;
-font-weight: 550;
-width: 280px;
-display: block;
-margin-bottom: 5px;
-}
-
-.atualizarForm button{
-font-size: 14px;
-color: white;
-background-color: #EC4A7D;
-width: 100%;
-max-width: 280px;
-height: 35px;
-border-radius: 15px;
-border: none;
-margin-top: 15px;
-box-sizing: border-box;
-cursor: pointer;
-}
-
 .atualizarForm button:hover {
-    transform: scale(1.2)
+  transform: scale(1.2);
 }
 
-
-
+/*# sourceMappingURL=modalAtlProduto.css.map */
